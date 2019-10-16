@@ -1,11 +1,8 @@
 <template>
+<v-app :style="{ backgroundImage: 'url(body.jpg)', backgroundPosition: 'center center', backgroundSize: 'cover'}">
   <v-layout column justify-center align-center >
     <v-flex xs12 sm8 md6 >
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
+      <v-card :style="{opacity:0.8}">
         <v-card-title class="headline">
           Welcome to the Vuetify + Nuxt.js template
         </v-card-title>
@@ -69,6 +66,7 @@
       </v-card>
     </v-flex>
   </v-layout>
+</v-app>
 </template>
 
 <script>
