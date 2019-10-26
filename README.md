@@ -20,3 +20,9 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+# git help command
+
+git branch -a Show all Branch
+git branch -d delete specific branch
+git branch -m old branch new branch

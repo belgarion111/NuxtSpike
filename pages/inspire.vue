@@ -1,15 +1,44 @@
 <template>
-  <v-layout>
-    <v-flex class="text-center">
-      <img src="/v.png" alt="Vuetify.js" class="mb-5" >
-      <blockquote class="blockquote">
-        &#8220;First, solve the problem. Then, write the code.&#8221;
-        <footer>
-          <small>
-            <em>&mdash;John Johnson</em>
-          </small>
-        </footer>
-      </blockquote>
-    </v-flex>
-  </v-layout>
+<v-app :style="{ backgroundImage: 'url(body.jpg)', backgroundPosition: 'center center', backgroundSize: 'cover'}">
+    <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" fixed app >
+      <v-list>
+        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact >
+          <v-list-item-action>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title v-text="item.title" />
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+</v-app>
 </template>
+<script>
+export default {
+  middleware: 'authenticated',
+  data () {
+  return {
+    drawer: true,
+    fixed: false,
+    items: [
+      {
+        icon: 'mdi-apps',
+        title: 'Welcome',
+        to: '/'
+      },
+      {
+        icon: 'mdi-chart-bubble',
+        title: 'Inspire',
+        to: '/inspire'
+      }
+    ],
+    miniVariant: false,
+    right: true,
+    rightDrawer: false,
+    title: 'Bean'
+  }
+}
+}
+</script>
+

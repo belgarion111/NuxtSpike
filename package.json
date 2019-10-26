@@ -1,5 +1,5 @@
 {
-  "name": "NuxtSpike",
+  "name": "nuxtspike",
   "version": "1.0.0",
   "description": "My Spike width nuxt and git",
   "author": "cs367",
@@ -12,9 +12,17 @@
     "test": "jest"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "material-design-icons-iconfont": "^5.0.1",
+    "nuxt": "^2.0.0",
+    "nuxt-material-design-icons": "^1.0.4",
+    "nuxt-webfontloader": "^1.1.0",
+    "vuelidate": "^0.7.4",
+    "cookieparser": "^0.1.0",
+    "js-cookie": "^2.2.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@mdi/font": "^4.5.95",
     "@nuxtjs/vuetify": "^1.0.0",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-jest": "^24.1.0",
