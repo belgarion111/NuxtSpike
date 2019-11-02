@@ -12,13 +12,14 @@
     "test": "jest"
   },
   "dependencies": {
+    "axios": "^0.19.0",
+    "cookieparser": "^0.1.0",
+    "js-cookie": "^2.2.0",
     "material-design-icons-iconfont": "^5.0.1",
     "nuxt": "^2.0.0",
     "nuxt-material-design-icons": "^1.0.4",
     "nuxt-webfontloader": "^1.1.0",
-    "vuelidate": "^0.7.4",
-    "cookieparser": "^0.1.0",
-    "js-cookie": "^2.2.0"
+    "vuelidate": "^0.7.4"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",

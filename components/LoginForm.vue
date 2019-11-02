@@ -63,7 +63,7 @@
             Cookie.set('auth', auth)
             this.$store.commit('setAuth', auth)
           }
-          this.$router.push('/inspire')
+          this.$router.push('/person/HelloWorld')
         }
       },
       clear () {

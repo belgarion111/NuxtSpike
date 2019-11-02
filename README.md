@@ -26,3 +26,6 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 git branch -a Show all Branch
 git branch -d delete specific branch
 git branch -m old branch new branch
+
+git add *
+git commit -m "Change titles and styling on homepage"
